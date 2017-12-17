@@ -1,0 +1,151 @@
+@import variables
+@import mixins
+@import classes
+@import queries
+@import fonts
+
+body 
+	margin: 0
+	font-family: openSans-Regular
+
+header
+	height: 350px
+	background-color: $color_azul_grisaceo
+	display: flex
+	justify-content: center
+	align-items: center
+
+	h1	
+		border: 8px $negro_claro solid
+		padding: 15px
+		font-family: robotoCondensed-Bold
+		color: $negro_claro
+
+section
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+
+	.form
+		width: 80%
+		display: flex
+		justify-content: center
+		align-items: center
+
+		form
+			display: flex
+			justify-content: space-around
+			align-items: center
+
+		.busqueda
+			margin: 40px 15px 40px 0
+			max-width: 450px
+			height: 35px
+			font-size: 2em
+
+		.submit
+			text-align: center
+			height: 41px
+			font-size: 1em
+			font-family: robotoCondensed-Bold
+			background-color: $color_blanco
+			border: 3px solid $azul_oscuro
+			+border-radius(10%)
+
+			&:hover
+				background-color: $azul_oscuro
+				color: $color_blanco
+				cursor: pointer
+
+
+	article.tiempo
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		text-align: center
+		margin-top: 75px
+		width: 80%
+
+	.titulo-articulo
+		width: 100%
+
+#contenedor_dias
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	width: 100%
+
+.contenedor-dia
+	width: 170px
+	height: 250px
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: center
+	border: 1px solid $color_gris
+	border-left: none
+	background-color: $color_blanco
+	
+	&:hover
+		cursor: pointer
+
+	.contenedor-tiempo
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		background-color: $color_azul_grisaceo
+		width: 100%
+		height: 60px
+
+	.contenedor-datos
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+
+		.icono-tiempo
+			width: 30px
+			height: auto
+
+	&:first-child
+		border-left: 1px solid $color_gris
+
+
+	.contenedor-temperatura
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		*
+			font-size: 1.4
+
+		.temperatura
+			font-size: 2em
+
+		.temperatura-min
+			color: blue
+
+		.temperatura-max
+			color: red
+td, th
+	text-align: center
+
+#tabla_dia
+	border: 1px solid black
+	border-collapse: collapse
+	margin-top: 30px
+
+	tbody
+		tr
+			background-color: $color_gris
+
+			&:nth-child(odd)
+				background-color: $color_gris_azulado
+
+footer
+	background-color: $azul_oscuro
+	height: 300px
+	width: 100%
+	position: relative
+	bottom: 0

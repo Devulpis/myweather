@@ -1,0 +1,217 @@
+/* Coolors Exported Palette - https://coolors.co/93b5c6-e4b363-ccdbdc-007ea7-003249 */
+.contenedor-sombreado {
+  box-shadow: 5px 5px 20px #888888; }
+
+.red {
+  color: red; }
+
+.blue {
+  color: blue; }
+
+.light-blue {
+  color: #42cbf4; }
+
+.dark-blue {
+  color: #000154; }
+
+.orange {
+  color: orange; }
+
+.bg-primary-color {
+  background-color: #93b5c6; }
+
+.max-width {
+  width: 100%; }
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 4em; }
+
+  .form form {
+    justify-content: space-around; } }
+@media only screen and (max-width: 600px) {
+  header {
+    height: 325px !important; }
+
+  h1 {
+    font-size: 3em; }
+
+  .hide-on-responsive {
+    display: none !important; }
+
+  .form form {
+    justify-content: space-around; }
+
+  .contenedor-dia {
+    margin-top: 30px; } }
+@media only screen and (max-width: 500px) {
+  header {
+    height: 275px !important; }
+
+  h1 {
+    font-size: 3em; }
+
+  .form form {
+    justify-content: space-around; }
+
+  .contenedor-dia {
+    width: 80% !important;
+    margin-top: 30px; }
+
+  .busqueda {
+    width: 60%; }
+
+  .submit {
+    width: 30%; } }
+@media only screen and (max-width: 450px) {
+  header {
+    height: 50px !important; }
+
+  h1 {
+    font-size: 1.3em;
+    padding: 15px 0 15px 0 !important;
+    border: none !important; }
+
+  .busqueda {
+    width: 60%; }
+
+  .submit {
+    width: 30%; }
+
+  .contenedor-dia {
+    width: 80% !important;
+    margin-top: 30px; } }
+@font-face {
+  font-family: robotoCondensed-Bold;
+  src: url(../fonts/RobotoCondensed-Bold.ttf); }
+@font-face {
+  font-family: openSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf); }
+body {
+  margin: 0;
+  font-family: openSans-Regular; }
+
+header {
+  height: 350px;
+  background-color: #93b5c6;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header h1 {
+    border: 8px #353535 solid;
+    padding: 15px;
+    font-family: robotoCondensed-Bold;
+    color: #353535; }
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  section .form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section .form form {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+    section .form .busqueda {
+      margin: 40px 15px 40px 0;
+      max-width: 450px;
+      height: 35px;
+      font-size: 2em; }
+    section .form .submit {
+      text-align: center;
+      height: 41px;
+      font-size: 1em;
+      font-family: robotoCondensed-Bold;
+      background-color: white;
+      border: 3px solid #133C55;
+      -webkit-border-radius: 10%;
+      -moz-border-radius: 10%;
+      -ms-border-radius: 10%;
+      border-radius: 10%; }
+      section .form .submit:hover {
+        background-color: #133C55;
+        color: white;
+        cursor: pointer; }
+  section article.tiempo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 75px;
+    width: 80%; }
+  section .titulo-articulo {
+    width: 100%; }
+
+#contenedor_dias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.contenedor-dia {
+  width: 170px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #ccdbdc;
+  border-left: none;
+  background-color: white; }
+  .contenedor-dia:hover {
+    cursor: pointer; }
+  .contenedor-dia .contenedor-tiempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #93b5c6;
+    width: 100%;
+    height: 60px; }
+  .contenedor-dia .contenedor-datos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .contenedor-dia .contenedor-datos .icono-tiempo {
+      width: 30px;
+      height: auto; }
+  .contenedor-dia:first-child {
+    border-left: 1px solid #ccdbdc; }
+  .contenedor-dia .contenedor-temperatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedor-dia .contenedor-temperatura * {
+      font-size: 1.4; }
+    .contenedor-dia .contenedor-temperatura .temperatura {
+      font-size: 2em; }
+    .contenedor-dia .contenedor-temperatura .temperatura-min {
+      color: blue; }
+    .contenedor-dia .contenedor-temperatura .temperatura-max {
+      color: red; }
+
+td, th {
+  text-align: center; }
+
+#tabla_dia {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 30px; }
+  #tabla_dia tbody tr {
+    background-color: #ccdbdc; }
+    #tabla_dia tbody tr:nth-child(odd) {
+      background-color: #e0ebef; }
+
+footer {
+  background-color: #133C55;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  bottom: 0; }
+
+/*# sourceMappingURL=estilos.css.map */

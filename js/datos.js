@@ -108,7 +108,7 @@ function mostrar_dia(contenedor, dia, num_dia) {
 				'<span class="descripcion">' + dia.dia_semana + ', ' + dia.dia_mes + '/' + dia.mes + '/' + dia.anio + '</span><br>' +
 			'</div>' + 
 			'<div class="contenedor-datos">' + 
-				'<img class="icono-tiempo" src="http://openweathermap.org/img/w/' + dia.cod_icono + '.png" alt="Icono del tiempo.">'+
+				'<img class="icono-tiempo" src="https://openweathermap.org/img/w/' + dia.cod_icono + '.png" alt="Icono del tiempo.">'+
 				'<span class="descripcion">' + dia.descripcion + '</span>' +
 				'<div class="contenedor-temperatura">' + 
 					'<span class="temperatura">' + dia.temp + 'º C</span>' +
